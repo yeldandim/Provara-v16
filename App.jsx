@@ -609,13 +609,13 @@ function Leadership() {
           {/* Amber corner marks — consistent brand treatment */}
           <div style={{
             position:'absolute', top:0, left:0, zIndex:2,
-            width:'44px', height:'44px',
+            width:'22px', height:'22px',
             borderTop:`2px solid ${AMBER}`,
             borderLeft:`2px solid ${AMBER}`,
           }} />
           <div style={{
             position:'absolute', bottom:0, right:0, zIndex:2,
-            width:'44px', height:'44px',
+            width:'22px', height:'22px',
             borderBottom:`2px solid ${AMBER}`,
             borderRight:`2px solid ${AMBER}`,
           }} />
@@ -845,7 +845,7 @@ function Contact() {
     e.preventDefault()
     const sub  = encodeURIComponent(`Provara — ${form.name}${form.company ? ' · ' + form.company : ''}`)
     const body = encodeURIComponent(`Name: ${form.name}\nCompany: ${form.company}\nService: ${form.service}\n\n${form.message}`)
-    window.open(`mailto:info@provarausa.com?subject=${sub}&body=${body}`)
+    window.open(`mailto:admin@provarausa.com?subject=${sub}&body=${body}`)
     setSent(true)
   }
 
@@ -901,7 +901,7 @@ function Contact() {
                 letterSpacing:'.1em', textTransform:'uppercase',
                 color:AMBER, marginBottom:'6px',
               }}>Email</div>
-              <a href="mailto:info@provarausa.com"
+              <a href="mailto:admin@provarausa.com"
                 style={{
                   fontFamily:'var(--serif)', 
                   fontSize:'clamp(17px,2vw,24px)', color:WHITE,
@@ -909,7 +909,7 @@ function Contact() {
                 }}
                 onMouseEnter={e => e.currentTarget.style.color = AMBER}
                 onMouseLeave={e => e.currentTarget.style.color = WHITE}>
-                info@provarausa.com
+                admin@provarausa.com
               </a>
             </div>
           </div>
@@ -1079,14 +1079,14 @@ function Footer() {
               marginTop:'14px', fontFamily:'var(--sans)', fontSize:'11px',
               letterSpacing:'.06em', color:'rgba(255,255,255,.2)', lineHeight:1.8,
             }}>
-              info@provarausa.com
+              admin@provarausa.com
             </div>
           </div>
 
           {[
             { h:'Company',  items:[['Leadership','#leadership'],['Our Approach','#approach']] },
             { h:'Services', items:[['P6 Scheduling','#scheduling'],["Owner's Rep",'#services'],['Construction Mgmt','#services'],['Due Diligence','#services']] },
-            { h:'Connect',  items:[['Email Us','mailto:info@provarausa.com'],['LinkedIn','https://www.linkedin.com/in/yeldandi/'],['Schedule a Call','#contact']] },
+            { h:'Connect',  items:[['Email Us','mailto:admin@provarausa.com'],['LinkedIn','https://www.linkedin.com/in/yeldandi/'],['Schedule a Call','#contact']] },
           ].map(col => (
             <div key={col.h}>
               <div style={{
