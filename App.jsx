@@ -609,20 +609,20 @@ function Leadership() {
           {/* Amber corner marks — consistent brand treatment */}
           <div style={{
             position:'absolute', top:0, left:0, zIndex:2,
-            width:'22px', height:'22px',
+            width:'44px', height:'44px',
             borderTop:`2px solid ${AMBER}`,
             borderLeft:`2px solid ${AMBER}`,
           }} />
           <div style={{
             position:'absolute', bottom:0, right:0, zIndex:2,
-            width:'22px', height:'22px',
+            width:'44px', height:'44px',
             borderBottom:`2px solid ${AMBER}`,
             borderRight:`2px solid ${AMBER}`,
           }} />
           <img src={imgFounder} alt="Mithul Yeldandi, Founder"
             style={{
               position:'absolute', inset:0,
-              width:'100%', height:'100%',
+              width:'60%', height:'60%',
               objectFit:'cover', objectPosition:'center 10%',
             }} />
           <div style={{
