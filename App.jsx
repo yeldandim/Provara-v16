@@ -598,14 +598,14 @@ function Sectors() {
 function Leadership() {
   const r1 = useReveal(), r2 = useReveal()
   return (
-    <section id="leadership" style={{ background:WHITE, overflow:'hidden' }}>
+    <section id="leadership" style={{ background:WHITE }}>
       <div style={{
         display:'grid', gridTemplateColumns:'1fr 1fr',
-        minHeight:'80vh',
+        minHeight:'auto',
       }} className="g2">
-
         {/* Photo */}
-        <div ref={r1} className="rv" style={{ position:'relative', minHeight:'200px', maxWidth: '300px',margin:'0 auton' }}>
+        <div ref={r1} className="rv" style={{ position:'relative', display:'flex', justifyContent:'center', alignItems:'flex-start', padding:'40px' }}>
+          <div style={{ position:'relative', width:'200px', flexShrink:0 }}>
           {/* Amber corner marks — consistent brand treatment */}
           <div style={{
             position:'absolute', top:0, left:0, zIndex:2,
