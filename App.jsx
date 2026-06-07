@@ -621,28 +621,29 @@ function Leadership() {
           }} />
           <img src={imgFounder} alt="Mithul Yeldandi, Founder"
             style={{
-              position:'absolute', inset:0,
-              width:'100%', height:'100%',
+              display:'block', width:'100%',
+              aspectRatio:'3/4',
               objectFit:'cover', objectPosition:'center 10%',
             }} />
           <div style={{
             position:'absolute', bottom:0, left:0, right:0, zIndex:3,
             background:'linear-gradient(to top, rgba(26,23,20,.88) 0%, transparent 100%)',
-            padding:'60px 28px 24px',
+            padding:'40px 16px 16px',
           }}>
             <div style={{
               fontFamily:'var(--serif)', fontWeight:400,
-              fontSize:'clamp(22px,2.5vw,30px)', color:WHITE,
-              lineHeight:1.1, marginBottom:'5px', letterSpacing:'-.01em',
+              fontSize:'16px', color:WHITE,
+              lineHeight:1.2, marginBottom:'4px',
             }}>
               Mithul Yeldandi
             </div>
             <div style={{
-              fontFamily:'var(--sans)', fontSize:'11px', fontWeight:500,
-              letterSpacing:'.12em', textTransform:'uppercase', color:AMBER,
+              fontFamily:'var(--sans)', fontSize:'10px', fontWeight:500,
+              letterSpacing:'.1em', textTransform:'uppercase', color:AMBER,
             }}>
-              Founder &amp; Principal · PMP · CCM
+              Founder · PMP · CCM
             </div>
+          </div>
           </div>
         </div>
 
