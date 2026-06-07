@@ -605,7 +605,7 @@ function Leadership() {
       }} className="g2">
 
         {/* Photo */}
-        <div ref={r1} className="rv" style={{ position:'relative', minHeight:'520px' }}>
+        <div ref={r1} className="rv" style={{ position:'relative', minHeight:'200px' }}>
           {/* Amber corner marks — consistent brand treatment */}
           <div style={{
             position:'absolute', top:0, left:0, zIndex:2,
