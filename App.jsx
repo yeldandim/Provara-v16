@@ -622,7 +622,7 @@ function Leadership() {
           <img src={imgFounder} alt="Mithul Yeldandi, Founder"
             style={{
               position:'absolute', inset:0,
-              width:'60%', height:'60%',
+              width:'100%', height:'100%',
               objectFit:'cover', objectPosition:'center 10%',
             }} />
           <div style={{
